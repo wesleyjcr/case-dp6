@@ -80,4 +80,23 @@
   )
     .parent()
     .removeClass('fechado');
+
+  jQuery(
+    $('#nome').focusout(function(){
+      gtag('event', '#nome', {'event_category': 'contato', 'event_label' : 'preencheu'});
+    })
+  );
+
+  jQuery(
+    $('#email').focusout(function(){
+      gtag('event', '#email', {'event_category': 'contato', 'event_label' : 'preencheu'});
+    })
+  );
+
+  jQuery(
+    $('#telefone').focusout(function(){
+      gtag('event', '#telefone', {'event_category': 'contato', 'event_label' : 'preencheu'});
+    })
+  );
+
 })(jQuery);
