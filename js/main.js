@@ -19,6 +19,7 @@
       .attr('alt', data.name);
     lb.find('.lightbox-title').text(data.name);
     lbContent.html(content).scrollTop(0);
+    gtag('event', 'ver_mais', {'event_category': 'analise', 'event_label' : data.name});
     setTimeout(function () {
       body.addClass('lightbox-open');
     }, 200);
