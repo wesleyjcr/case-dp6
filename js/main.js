@@ -67,6 +67,7 @@
         .attr('alt', 'Logo DP6');
       lb.find('.lightbox-title').text('Contato enviado');
       lbContent.html('Obrigado pelo seu contato!').scrollTop(0);
+      gtag('event', 'enviado', {'event_category': 'contato', 'event_label' : 'enviado'});
       setTimeout(function () {
         body.addClass('lightbox-open');
         submit.removeAttr('disabled');
